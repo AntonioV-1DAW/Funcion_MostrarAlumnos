@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-    </head>
-    <body>
-
-    </body>
-</html>
 <?php
     function conectar(){
         $conexion=new mysqli("localhost", "root", "", "alumnos");
@@ -24,3 +15,20 @@
         }
     }
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div>
+            <label for="alumnos" placeholder="Selecciona un alumno">Para: </label>
+            <select name="alumnos" id="alumnos"></select>
+        </div>
+        <br>
+        <div>
+            <label for="nombre">Agradecimiento:</label><br>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu agradecimiento" class="agradecer" required><br>
+         </div>
+    </body>
+</html>
