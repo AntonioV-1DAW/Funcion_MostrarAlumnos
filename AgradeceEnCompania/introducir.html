@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio-AGRADECE_EN_COMPAÑIA</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="San Francisco Javier">
+		<link rel="StyleSheet" href="./Estilos.css" type="text/css">
+    </head>
+    <body class="fondoIntroducir">
+        <header class="tituloIntroducir">
+            <img src="./imagenes/titulo.png"/>
+            <br>
+            <img src="./imagenes/comparte.png"/>
+        </header>
+        <article class="introducir">
+            <div  class="inicio">
+                <img src="./imagenes/inicia.png"/>
+            </div>
+            <div>
+                <form action="introducir.php" method="POST">
+                    <div>
+                        <label for="usuario">Usuario:</label><br>
+                        <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario" class="campo" required><br><br>
+
+                        <label for="nombre">Contraseña:</label><br>
+                        <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" class="campo" required><br>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="radio" id="recordarme" name="recordarme" value="recordarme" required>
+                            <label for="recordarme">Recordarme</label>
+                            <br>
+                            <div class="btnEnviar">Enviar</div>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </body>
+</html>
