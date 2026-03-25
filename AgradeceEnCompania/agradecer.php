@@ -22,7 +22,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <meta name="author" content="Papa Francisco">
+        <meta name="author" content="San Francisco Javier">
         <link rel="StyleSheet" href="./Estilos.css" type="text/css"/>
     </head>
     <body>
@@ -30,9 +30,9 @@
             <img src="./imagenes/titulo.png"/>
         </header>
         <nav>
-            <a class="botones" href="./inicio.html">Inicio</a>
 			<a class="botones" href="./agradecer.php">Agradecer</a>
 			<a class="botones" href="./MisAgradecimientos.html">Mis Agradecimientos</a>
+            <a class="botones" href="./cerrar_sesion.php">Cerrar sesión</a>
         </nav>
         <section class="principal">
             <label for="alumnos" placeholder="Selecciona un alumno">Para: </label>
@@ -41,9 +41,8 @@
                     mostrarAlumnos($conexion);
                 ?>
             </select>
-
-            <label for="informacion">Mensaje:</label><br>
-            <input type="text" id="informacion" name="Informacion" placeholder="Introduce tu mensaje" class="mensaje" required><br><br>
+            <label for="informacion">Agradecimiento:</label><br>
+            <input type="text" id="informacion" name="informacion" placeholder="Introduce tu mensaje" class="mensaje" required><br><br>
         </section>
         <aside>
             <img src="./imagenes/jesuita.png" class="jesuita"/>

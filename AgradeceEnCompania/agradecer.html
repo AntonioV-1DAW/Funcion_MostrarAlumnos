@@ -10,22 +10,24 @@
             <img src="./imagenes/titulo.png"/>
         </header>
         <nav>
-            <a class="botones" href="./inicio.html">Inicio</a>
-			<a class="botones" href="./agradecer.html">Agradecer</a>
+			<a class="botones" href="./agradecer.php">Agradecer</a>
 			<a class="botones" href="./MisAgradecimientos.html">Mis Agradecimientos</a>
+            <a class="botones" href="./cerrar_sesion.php">Cerrar sesión</a>
         </nav>
         <section class="principal">
-            <div>
-                <label for="alumnos" placeholder="Selecciona un alumno">Para: </label>
-                <select name="alumnos" id="alumnos">
-                    <option value="1">Perez Maroto, Alejandro</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label for="nombre">Agradecimiento:</label><br>
-                <input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu agradecimiento" class="agradecer" required><br>
-            </div>
+            <label for="alumnos" placeholder="Selecciona un alumno">Para: </label>
+            <select name="alumnos" id="alumnos">
+                <option value="1">Perez Maroto, Alejandro</option>
+            </select>
+            <label for="informacion">Agradecimiento:</label><br>
+            <input type="text" id="informacion" name="informacion" placeholder="Introduce tu mensaje" class="mensaje" required><br><br>
         </section>
+        <aside>
+            <img src="./imagenes/jesuita.png" class="jesuita"/>
+            <p>
+                <h4>San Francisco Javier:</h4>
+                <div>¿De qué le sirve al hombre ganar el mundo entero, si pierde su alma?</div>
+            </p>
+        </aside>
     </body>
 </html>

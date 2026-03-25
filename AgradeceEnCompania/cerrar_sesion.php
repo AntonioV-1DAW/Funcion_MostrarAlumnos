@@ -7,6 +7,6 @@
     session_destroy();
 
     //Redirigir al login
-    header("Location: introducir.php");
+    header("Location: index.php");
     exit();
 ?>

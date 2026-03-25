@@ -1,0 +1,9 @@
+CREATE TABLE alumnos (
+	id SMALLINT AUTO_INCREMENT PRIMARY KEY,
+	nombre VARCHAR(50) NOT NULL,
+	usuario VARCHAR(50) NOT NULL UNIQUE,
+	contrasena VARCHAR(50) NOT NULL UNIQUE,
+	nombreJesuita VARCHAR(50) NOT NULL,
+	imagenJesuita MEDIUMBLOB NULL,
+	informacionJesuita TEXT NOT NULL
+);
