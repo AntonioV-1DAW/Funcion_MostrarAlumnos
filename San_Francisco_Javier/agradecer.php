@@ -1,10 +1,6 @@
 <?php
     include'configdb.php';
-    
-    function conectar(){
-        $conexion=new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
-        return $conexion;
-    }
+    include'conexion.php';
 
     function mostrarAlumnos($conexion){
         $conexion=conectar();
@@ -44,12 +40,5 @@
             <label for="infoJesuita">Agradecimiento:</label><br>
             <input type="text" id="infoJesuita" name="infoJesuita" placeholder="Introduce tu mensaje" class="mensaje" required><br><br>
         </section>
-        <aside>
-            <img src="./imagenes/jesuita.png" class="jesuita"/>
-            <p>
-                <h4>San Francisco Javier:</h4>
-                <div>¿De qué le sirve al hombre ganar el mundo entero, si pierde su alma?</div>
-            </p>
-        </aside>
     </body>
 </html>

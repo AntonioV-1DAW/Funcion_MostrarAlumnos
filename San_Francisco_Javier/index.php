@@ -1,8 +1,7 @@
 <?php
     include'configdb.php';
+    include'conexion.php';
     session_start();
-
-    $conexion=new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
 
     if($_POST){
         $usuario=$_POST["usuario"];
@@ -10,7 +9,7 @@
 
         //Consulta del query
         $sql = "SELECT idAlumno FROM alumnos WHERE usuario = '$usuario' AND contrasena = '$password'";
-        echo $sql
+        echo $sql;
         echo'<br/>';
         echo'<br/>';
         $resultado=$conexion->query($sql);
